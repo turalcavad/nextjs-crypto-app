@@ -1,3 +1,10 @@
+A Crypto App with NEXT.js on the Redux architecture.
+
+
+![image](https://user-images.githubusercontent.com/94475609/181004331-a890b387-c067-4919-a87e-972ba4b00b76.png)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
