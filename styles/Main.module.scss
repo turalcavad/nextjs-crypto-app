@@ -1,0 +1,27 @@
+.container {
+	margin-top: 120px;
+
+	h1 {
+		margin: 0;
+		font-size: 90px;
+		span {
+			color: #ff960b;
+		}
+	}
+
+	p {
+		line-height: 22px;
+		font-size: 14px;
+	}
+}
+
+.btn {
+	color: #fff;
+	display: inline-block;
+	background-color: #ff960b;
+	text-decoration: none;
+	padding: 15px 30px;
+	border-radius: 30px;
+	cursor: pointer;
+	margin-top: 30px;
+}

@@ -1,0 +1,25 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	ul {
+		list-style: none;
+		flex: 1;
+
+		li {
+			display: inline-block;
+			margin: 10px 20px;
+			cursor: pointer;
+		}
+	}
+}
+
+.btn {
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	border-radius: 20px;
+	cursor: pointer;
+	outline: none;
+}

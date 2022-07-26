@@ -1,0 +1,33 @@
+.coinList {
+	position: absolute;
+	right: 10%;
+	bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.coin {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	margin: 0 15px;
+	color: #ff960b;
+	border: 1px solid #fff;
+	padding: 20px 30px;
+	border-radius: 8px;
+
+	.coinImg {
+		margin-right: 10px;
+	}
+}
+
+.coinText {
+	margin-left: 10px;
+	h3 {
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	p {
+		margin: 0;
+	}
+}
