@@ -4,13 +4,23 @@ import BitcoinImg from "../assets/images/bitcoin.png";
 import EthereumImg from "../assets/images/ethereum.png";
 import DogeCoin from "../assets/images/dogecoin.png";
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { fetchCryptos } from "../redux/crypto";
 
 export default function Coins() {
+	const [coins, setCoins] = useState([]);
+
 	const myCoins = useSelector((state) => state.reducers.cryptos);
 	const isLoading = useSelector((state) => state.reducers.isLoading);
+	const dispatch = useDispatch();
+	dispatch(fetchCryptos());
 
-	if (isLoading) return <div className={styles.coinList}>Loading...</div>;
+	if (isLoading)
+		return (
+			<div suppressHydrationWarning className={styles.coinList}>
+				Loading...
+			</div>
+		);
 	const { lastPrice: bitcoinPrice } = myCoins?.find(
 		(coin) => coin.symbol === "BTCUSDT"
 	);
@@ -33,7 +43,7 @@ export default function Coins() {
 			<div className={styles.coin}>
 				<Image src={EthereumImg} width="40px" height="40px" />
 				<div className={styles.coinText}>
-					<h3>$ {Number(ethereumPrice).toFixed(2)}</h3>
+					<h3>${Number(ethereumPrice).toFixed(2)}</h3>
 					<p>Ethereum</p>
 				</div>
 			</div>
