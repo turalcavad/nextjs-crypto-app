@@ -13,9 +13,7 @@ export default function Coins() {
 	const myCoins = useSelector((state) => state.reducers.cryptos);
 	const isLoading = useSelector((state) => state.reducers.isLoading);
 	const dispatch = useDispatch();
-	setInterval(function () {
-		dispatch(fetchCryptos);
-	}, 20000);
+	setInterval(dispatch(fetchCryptos), 1000);
 
 	if (isLoading)
 		return (
