@@ -1,5 +1,7 @@
 A Crypto App with NEXT.js on the Redux architecture.
 
+Live Site: https://nextjs-crypto-d268qpuac-turalcavad.vercel.app/
+
 
 ![image](https://user-images.githubusercontent.com/94475609/181004331-a890b387-c067-4919-a87e-972ba4b00b76.png)
 
